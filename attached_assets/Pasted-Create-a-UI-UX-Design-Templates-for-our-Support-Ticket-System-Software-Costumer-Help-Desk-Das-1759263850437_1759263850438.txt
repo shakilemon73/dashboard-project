@@ -1,0 +1,50 @@
+Create a UI & UX Design Templates for our Support Ticket System Software (Costumer Help Desk)
+
+
+
+Dashboard
+Monitor your support ticket system with real-time data on tickets, trends and groups.
+
+inbox
+Track and manage inbound support tickets from multiple communication channels in one inbox.
+
+Ticket assignment
+Automatically assign tickets to agents and groups based on keywords, requests or characteristics.
+
+Ticket topics
+Create ticket topics with important information such as categories, software used, plugin version, error message, feature requests, etc.
+
+SLA management
+Set deadlines for ticket response and resolution times depending on business hours or categories.
+
+Custom ticket statuses
+Create custom status messages that adapt to your unique workflow. This way you can easily see the processing status of a ticket.
+
+automation
+Automate recurring tasks and perform multiple actions on a ticket with a single click.
+
+Saved answers
+Respond quickly and consistently to frequently asked questions by providing canned answers.
+
+Teamwork
+Exchange ideas with experts from different departments on specific aspects of tickets and find the best solutions.
+
+Joint editing
+Collaborate on tickets with other teams and keep track of progress.
+
+Email integration
+Convert support emails into trackable tickets in your support ticket system for better management and resolution.
+
+Automatic email notifications
+Automatically notify customers and account managers of any changes in their tickets.
+
+Authorization management for customer service representatives
+Give account managers specific access and action permissions based on their roles and responsibilities.
+
+Reporting and statistics
+Easily access data and reports to get tailored insights relevant to your daily operations.
+Our Inspirations of this platform system design will be just like:
+https://www.freshworks.com/freshdesk/
+https://www.zoho.com/desk/
+https://www.happyfox.com/help-desk-ticketing-system/
+https://www.helpscout.com/platform/ ,,,,Now you can play the role world top-notch UX UI designer make this design Minimalitic, visually apealing, easy understand. easy to navigate user-flow, excllent typgraphy , colour phycology, and icongraphy, easy to user enggesment. 
