@@ -111,8 +111,8 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader className="p-4">
-        <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary">
+        <div className="flex items-center gap-2" role="banner" aria-label="HelpDesk Application Logo">
+          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary transition-colors duration-200">
             <Ticket className="h-5 w-5 text-primary-foreground" />
           </div>
           <span className="text-lg font-semibold">HelpDesk</span>
@@ -121,7 +121,9 @@ export function AppSidebar() {
       <SidebarContent>
         {menuItems.map((group) => (
           <SidebarGroup key={group.title}>
-            <SidebarGroupLabel>{group.title}</SidebarGroupLabel>
+            <SidebarGroupLabel className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              {group.title}
+            </SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
                 {group.items.map((item) => (
@@ -130,9 +132,14 @@ export function AppSidebar() {
                       asChild
                       isActive={location === item.url}
                       data-testid={`link-${item.title.toLowerCase().replace(/\s+/g, "-")}`}
+                      className="min-h-11 transition-all duration-200 cursor-pointer"
                     >
-                      <Link href={item.url}>
-                        <item.icon className="h-4 w-4" />
+                      <Link 
+                        href={item.url}
+                        aria-label={`Navigate to ${item.title}`}
+                        aria-current={location === item.url ? "page" : undefined}
+                      >
+                        <item.icon className="h-4 w-4" aria-hidden="true" />
                         <span>{item.title}</span>
                       </Link>
                     </SidebarMenuButton>
@@ -144,9 +151,13 @@ export function AppSidebar() {
         ))}
       </SidebarContent>
       <SidebarFooter className="p-4">
-        <div className="flex items-center gap-3 rounded-md border p-3 hover-elevate">
-          <Avatar className="h-8 w-8">
-            <AvatarImage src="" />
+        <button 
+          className="flex items-center gap-3 rounded-md border p-3 hover-elevate active-elevate-2 w-full text-left transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          aria-label="User account menu for Admin User"
+          data-testid="button-user-account"
+        >
+          <Avatar className="h-9 w-9 transition-transform duration-200">
+            <AvatarImage src="" alt="Admin User avatar" />
             <AvatarFallback className="bg-primary text-primary-foreground text-xs">
               AD
             </AvatarFallback>
@@ -155,7 +166,7 @@ export function AppSidebar() {
             <p className="text-sm font-medium">Admin User</p>
             <p className="text-xs text-muted-foreground truncate">admin@helpdesk.com</p>
           </div>
-        </div>
+        </button>
       </SidebarFooter>
     </Sidebar>
   );
